@@ -1,0 +1,30 @@
+{
+  "name": "playwright-split",
+  "version": "1.0.0",
+  "description": "A tool to split Playwright tests based on their durations",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "split-tests": "ts-node bin/splitTests.ts"
+  },
+  "bin": {
+    "split-tests": "./dist/bin/splitTests.js"
+  },
+  "dependencies": {
+    "commander": "^7.2.0",
+    "debug": "^4.3.3",
+    "fs-extra": "^10.0.0",
+    "globby": "^12.0.2",
+    "humanize-duration": "^3.27.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^16.4.3",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "author": "Ravi Kiran Vemula",
+  "license": "ISC"
+}
